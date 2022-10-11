@@ -1,1 +1,492 @@
+<!-- para hacer comentarios es así -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="./style.css">
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ef46897835.js" crossorigin="anonymous"></script>
+    
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Food Talk</title>
+
+  </head>
+  
+  <body>
+    <!--fondo ppal-->
+    <div class="slider vh-100 align-items-center">
+      <!--Navbar-->
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light" id="nav">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="./assets/imagenes/Food_talk_logo.png" alt="Logo Food Talk"
+              width="auto" height="120px" max-height="120px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#nav">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about_us">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#rece_titulo">Recetas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#rece-dia-t">Receta del día</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#shop">Shop</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact_us">Contact us</a>
+                </li>
+                
+              </ul>
+
+              <button class="btn btn-outline-secondary ms-lg-3"><i class="fa-solid fa-user"> </i> Mi Cuenta</button>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!--texto principal-->
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-7 mx-auto text-center slogan_botones">
+            <h1 class="food_talk">Food Talk</h1>
+            <p class="slogan">Recetas simples para todos los días!</p><br>
+            <a href="#rece_titulo" class="btn btn-outline-light btn-inicio">Ver Recetas</a>
+            <a href="#shop" class="btn btn-outline-light btn-inicio">Ver Tienda</a>
+            <a href="#contact_us" class="btn btn-outline-light btn-inicio">Contactanos</a>
+            <br>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!--About us titulo-->
+    <section id="about_us">
+      <div class="col-md-28 mx-auto ">
+          <h1 class="animate__animated animate__fadeInLeft">About</h1>
+      </div>
+    </section>
+
+    <!--about us info-->  
+    <section class="profiles">
+      <div class="ppal">
+        <img src="./assets/imagenes/aboutuspic.png" alt="Our team" >
+        <div class="all-text">
+          <p>
+            Food talk fue creado por un grupo de personas que están buscando, creando y mejorando recetas constantemente para compartir!<br> 
+            <br>Tenemos un equipo de genios detrás de nosotros en Food Talk que son expertos en un poco de todo, desde servicio al cliente, redes sociales, videografía, hasta ayudar con sesiones de recetas. Ellos son TODO. Nuestro equipo ayuda a que todo funcione sin problemas.<br>
+            <br>En este espacio, siempre estamos creando nuevas, frescas y sabrosas recetas para vos. Nuestro objetivo es inspirarte con comidas que son fáciles y ricas, para que cocines para vos, tu familia, tus amigos o tu pareja.<br></p>
+            <br><p><em>Actualmente cocinando en la hermosa ciudad de Buenos Aires. </em></p><br>
+          </p>
+        </div>
+      </div> 
+    </section>
+
+
+    <!--Recetas titulo-->
+    <section id="rece_titulo">
+      <div>
+          <h1 class="animate__animated animate__fadeInLeft">Recetario</h1>
+      </div>
+    </section>
+
+    <!--recetas-->    
+    <section id="Recetario">
+      <div class="container recetas">
+          <div class="box">
+              <div class="imgBox">
+                  <img src="./assets/imagenes/breakfast.jpg" class="card-img-top" alt="img desayuno">
+              </div>
+              <div class="content">
+                <div>
+                  <h2>Desayunos</h2>
+                  <p class="desc">Los panqueques esponjosos más perfectos, huevos y bacon, o muffins recién salidos del horno. ¿Quién no ama el desayuno?</p>
+                  <a href="#" class="btn_rece btn btn-outline-light">Ver recetas</a>
+                </div>
+              </div>
+          </div>
+          <div class="box">
+              <div class="imgBox">
+                  <img src="./assets/imagenes/cena.jpg" class="card-img-top" alt="img almuerzos y cenas">
+              </div>
+              <div class="content">
+                <div>
+                  <h2>Almuerzos y Cenas</h2>
+                  <p class="desc">"¿Que puedo almorzar hoy?", "¿Que hay para cenar?"... <br>¡Ay esa pregunta!, vamos a ayudarlo a obtener la respuesta.</p>
+                  <a href="#" class="btn_rece btn btn-outline-light">Ver recetas</a>
+                </div>
+              </div>
+          </div>
+          <div class="box">
+              <div class="imgBox">
+                  <img src="./assets/imagenes/sandwich.jpg" class="card-img-top" alt="img Sandwiches">
+              </div>
+              <div class="content">
+                <div>
+                  <h2>Sandwiches</h2>
+                  <p class="desc">Una opción que sirve en todo momento, para el desayuno, al mediodía, a la tarde, o para el bajón de la noche! Estos sandwiches nunca fallan.</p>
+                  <a href="#" class="btn_rece btn btn-outline-light">Ver recetas</a>
+                </div>
+              </div>
+          </div>
+          <div class="box">
+              <div class="imgBox">
+                  <img src="./assets/imagenes/dulce.jpg" class="card-img-top" alt="img dulces">
+              </div>
+              <div class="content">
+                <div>
+                  <h2>Dulces</h2>
+                  <p class="desc">Recetas dulces para cada momento del día! No estamos cenando solo para llegar al postre pero, por si acaso... Aquí hay algunas ideas!</p>
+                  <a href="#" class="btn_rece btn btn-outline-light">Ver recetas</a>
+                </div>
+              </div>
+          </div>
+          <div class="box">
+              <div class="imgBox">
+                  <img src="./assets/imagenes/mexican.jpg" class="card-img-top" alt="img comida mexicana">
+              </div>
+              <div class="content">
+                <div>
+                  <h2>Comida Mexicana</h2>
+                  <p class="desc">Estas recetas son un conjunto de platos y técnicas de México, que forman parte de las tradiciones y vida común de sus habitantes.</p>
+                  <a href="#" class="btn_rece btn btn-outline-light">Ver recetas</a>
+                </div>
+              </div>
+          </div>
+          <div class="box">
+              <div class="imgBox">
+                  <img src="./assets/imagenes/oriental.jpg" class="card-img-top" alt="img comida mexicana">
+              </div>
+              <div class="content">
+                <div>
+                  <h2>Comida Oriental</h2>
+                  <p class="desc">Recetas de todo tipo de comida oriental/asiática. Ya sean woks, sushi, ramen, dumplings, baozis, pad thai, sopas de mariscos, etc.</p>
+                  <a href="#" class="btn_rece btn btn-outline-light">Ver recetas</a>
+                </div>
+              </div>
+          </div>
+          <div class="box">
+              <div class="imgBox">
+                  <img src="./assets/imagenes/aperitivos.jpg" class="card-img-top" alt="img Aperitivos">
+              </div>
+              <div class="content">
+                <div>
+                  <h2>Aperitivos</h2>
+                  <p class="desc">Aquí puedes encontrar decenas de recetas para empezar tu comida de forma memorable. Recetas perfectas para deleitar tu paladar.</p>
+                  <a href="#" class="btn_rece btn btn-outline-light ">Ver recetas</a>
+                </div>
+              </div>
+          </div>
+          <div class="box">
+              <div class="imgBox">
+                  <img src="./assets/imagenes/ensalada.jpg" class="card-img-top" alt="img dulces">
+              </div>
+              <div class="content">
+                <div>
+                  <h2>Ensaladas</h2>
+                  <p class="desc">Docenas de ensaladas frescas, saludables y ricas. Porque alimentarse bien debería disfrutarse al igual que cualquier otra comida!</p>
+                  <a href="#" class="btn_rece btn btn-outline-light">Ver recetas</a>
+                </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <!--Receta del día-->
+    <section id="rece-dia-t">
+      <div class="container">
+          <h1 class="animate__animated animate__fadeInLeft">Receta del día!</h1>
+      </div>
+    </section>
+    
+   
+    <div class="fondo2 vh-100 ">
+      <div class="container-fluid padding">
+        <div class="row padding">
+          <div class="cookie-style  mx-auto">
+            
+            <h3 class="cookies-desc text-left"><strong>Cookies con Chips de Chocolate</strong></h3>
+            <p class="cookies-desc2 text-align">
+              ¡Esta es la mejor receta de Cookies con chips de chocolate! 
+              <br> Sin ingredientes díficles, sin tiempo de enfriamiento, etc. 
+              <br> ¡Solo una cookie con chips de chocolate simple, fácil, 
+              <br>  suave, increíblemente deliciosa y esponjosa
+              <br> que resulta perfecta cada vez!</p>
+            <div class="form-check mx-auto ingredientess">
+              <h4><U>Ingredientes:</U></h4>
+              <label>
+                <input class="form-check-input me-1" type="checkbox" >
+                <span class="checkbox"></span>
+                Manteca - 80gr
+              </label><br>
+              <label>
+                <input class="form-check-input me-1" type="checkbox" value="">
+                <span class="checkbox"></span>
+                Azúcar blanca - 1/2 taza
+              </label><br>
+              <label>
+                <input class="form-check-input me-1" type="checkbox" value="">
+                <span class="checkbox"></span>
+                Azúcar morena - 1/2 taza
+              </label><br>
+              <label>
+                <input class="form-check-input me-1" type="checkbox" value="">
+                <span class="checkbox"></span>
+                Huevo - 1 unidad
+              </label><br>
+              <label>
+                <input class="form-check-input me-1" type="checkbox" value="">
+                <span class="checkbox"></span>
+                Extracto de vainilla - 1 cucharadita
+              </label><br>
+              <label>
+                <input class="form-check-input me-1" type="checkbox" value="">
+                <span class="checkbox"></span>
+                Harina - 1 1/2 taza
+              </label><br>
+              <label>
+                <input class="form-check-input me-1" type="checkbox" value="">
+                <span class="checkbox"></span>
+                Sal - 1/4 cucharadita
+              </label><br>
+              <label>
+                <input class="form-check-input me-1" type="checkbox" value="">
+                <span class="checkbox"></span>
+                Polvo de hornear - 1/2 cucharadita
+              </label><br>
+            </div>
+            <a href="#" class="btn btn-outline-light">Ver receta</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Inicio Shop-->
+    <section id="shop">
+      <div>
+          <h1 class="animate__animated animate__fadeInLeft">Shop</h1>
+      </div>
+    </section>
+
+    <section id="shopp">
+      <div class="container compras">
+        <div class="box">
+          <div class="imgBox">
+            <img src="./assets/imagenes/libro.jpg" alt="Libro de recetas">
+          </div>
+          <div class="content">
+            <div>
+              <h2>Libro de recetas ~Food Talk~</h2>
+              <p class="desc">Comidas y postres riquísimos que podes preparar en casa sin importar tu nivel de cocina!</p>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBox">
+            <img src="./assets/imagenes/protein.jpg" alt="Saborizantes">
+          </div>
+          <div class="content">
+            <div>
+              <h2>Proteínas y saborizantes</h2>
+              <p class="desc">Ingredientes naturales y súper saludables para darle sabor a tus comidas.</p>
+            </div>
+          </div>
+        </div>
+      <div class="box">
+        <div class="imgBox">
+          <img src="./assets/imagenes/clase_virtual.jpg" alt="Clases virtuales">
+        </div>
+        <div class="content">
+          <div>
+            <h2>Cociná con nosotros</h2>
+            <p class="desc">Variedad de clases virtuales para que aprendas ríqisimas recetas desde la comodidad de tu casa!</p>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imgBox">
+          <img src="./assets/imagenes/tazas.jpg" alt="Vajilla">
+        </div>
+        <div class="content">
+          <div>
+            <h2>Vajilla</h2>
+            <p class="desc">Nueva línea de platos, tazas, vasos y cubiertos Food Talk.</p>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imgBox">
+          <img src="./assets/imagenes/repostera.jpg" alt="Repostería">
+        </div>
+        <div class="content">
+          <div>
+            <h2>Herramientas para repostería</h2>
+            <p class="desc">Nuestra recomendación de herramientas para cocinar como un profesional.</p>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imgBox">
+          <img src="./assets/imagenes/experiencia.jpg" alt="Experiencias">
+        </div>
+        <div class="content">
+          <div>
+            <h2>Experiencias</h2>
+            <p class="desc">Te ofrecemos una variedad de experiencias, desde clases de cocina en pareja, hasta comidas en restaurantes lujosos.</p>
+          </div>
+        </div>
+      </div>
+     
+    </section>
+    <!--Fin Shop-->
+
+    <!--Contacto-->
+    <section id="contact_us">
+      <div>
+          <h1 class="animate__animated animate__fadeInLeft">Contact Us!</h1>
+      </div>
+    </section>
+
+    <!--Formulario de contacto-->
+    <section class="container-fluid" id="Formulario">
+      <div class="container">
+        <div class="row align-items-start">
+          <div class="col">
+            <div class="formulario row">
+              <div class="nombre">
+                <label for="FormControlInput1" class="form-label">Nombre</label>
+                <input type="name" class="form-control" id="FormControlInput1" placeholder="Nombre">
+              </div>
+              <div class="apellido">
+                <label for="FormControlInput2" class="form-label">Apellido</label>
+                <input type="surname" class="form-control" id="FormControlInput2" placeholder="Apellido">
+              </div>
+              <div class="telefono">
+                <label for="FormControlInput3" class="form-label">Teléfono</label>
+                <input type="text" class="form-control" id="FormControlInput3" placeholder="Teléfono">
+              </div>
+              <div class="email">
+                <label for="FormControlInput4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="FormControlInput4" placeholder="nombre@ejemplo.com">
+              </div>
+              <div class="mb-3">
+                <label for="FormControlTextarea1" class="form-label">Consultas / Comentarios:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe aquí..."></textarea>
+                <br><input type="submit" value="Enviar" class="btn btn-outline-dark">
+              </div>
+            </div>
+          </div>
+          <!--fin formulario-->
+          <!--inicio carousel-->
+          <div class="col">
+            <div id="carousel" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel" >
+              <div class="carousel-inner ">
+                <div class="carousel-item active">
+                  <video width="500" height="700" autoplay muted loop>
+                    <source src="./assets/videos/video1_mamaehijos.mp4">
+                  </video>
+                </div>
+                <div class="carousel-item">
+                  <video width="500" height="700" autoplay muted loop>
+                    <source src="./assets/videos/video2_pareja.mp4">
+                  </video>
+                </div>
+                <div class="carousel-item">
+                  <video width="500" height="700" autoplay muted loop>
+                    <source src="./assets/videos/video3_chicacomiendo.mp4">
+                  </video>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--fin seccion formulario y carousel-->
+
+    
+    <!--Bootrsap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  </body>
+
+  <!--boton flotante-->
+  <a href="#nav" class="float">
+  <i class="fa-solid fa-arrow-up my-float"></i>
+  </a>
+
+  <!--footer-->
+  <footer class="footer">
+    <article class="footer-left ">
+      <img class="footer_logo"
+        src="./assets/imagenes/Food_talk_logo.png" 
+        alt="Logo Food Talk"
+        width="200"
+        height="200">
+      <p class="footer-links">
+        <a href="#nav" class="link-1">Inicio</a>
+        <a href="#about_us">About</a>    
+        <a href="#rece_titulo">Recetas</a>          
+        <a href="#shop">Shop</a>      
+        <a href="#contact_us">Contact</a>
+      </p>
+      <p class="copyright">© 2022 Food Talk - All Rights Reserved.</p>                
+    </article>
+
+    <article class="footer-right">
+      <form>
+        <h5><strong>Suscribite para no perderte ninguna receta!</strong></h5>
+        <p>Nuevas recetas todas las semanas.</p>
+        <div class="d-flex w-100 gap-2">
+          <label for="newsletter1" class="visually-hidden footer-email">Email address</label>
+          <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+          <button class="btn btn-outline-light" type="button">Subscribe</button>
+        </div>
+      </form>
+      <br>
+      <h5><strong>Seguínos en nuestras redes!</strong></h5>
+      <br>
+      <ul class="social-icons">
+        <li><a class="insta" href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
+        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>  
+      </ul>
+    </article>
+  </footer>
+        
+</html>
