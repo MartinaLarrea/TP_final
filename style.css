@@ -1,0 +1,649 @@
+:root{
+    --primary: rgb(255, 245, 230);
+    --font_color: black;
+    --brown: rgb(144, 52, 19);
+    --footer: rgb(218, 130, 67, 0.66);
+    
+}
+*{
+    box-sizing: border-box;
+    
+}
+
+body {
+    margin: 0 auto;
+}
+
+div {
+    padding: 20px;
+}
+
+/*inicio navs*/
+#nav{
+    display: flex;
+    margin: 100%;
+    margin: 0 auto;
+    width: 100%;
+}
+.navbar{
+    background-color: var(--primary);
+    border-radius: 15px;
+    box-sizing: content-box;
+    margin: 0 auto;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+nav ul{
+    display: flex;
+    padding: 0 .5em;
+    
+}
+
+nav li{
+    margin-left: 20px;
+    list-style: none;
+    padding: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--font_color);
+}
+
+nav a:hover{
+    color: brown;
+}
+
+
+/*fin navs*/
+
+/*inicio slider*/
+.slider{
+    background-image: url(./assets/imagenes/slider.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position:relative;
+    z-index: 2;
+}
+.slider::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(250, 217, 167, 0.247);
+    z-index: -1; 
+}
+.food_talk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 65px;
+    color: white 
+}
+.slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+    font-family: 'Kalam', cursive;
+    font-size: 35px;
+    color: white;
+}
+.slogan_botones{
+    overflow: hidden;
+}
+.btn-inicio{
+    border-radius: 55px;
+    
+}
+/*fin slider*/
+
+/*inicio about us*/
+#about_us{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color:var(--brown);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 25px;
+    color: white
+}
+.profiles{
+    height: 100%;
+    width: 100%;
+    background: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profiles .ppal img{
+    width: 580px;
+    max-width: 100%;
+    height: auto;
+    padding: 0 10px;
+}
+.all-text{
+    width: 600px;
+    max-width: 100%;
+    padding: 0 10px;
+}
+.ppal{
+    width: 1290px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.all-text p{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    color: var(--font_color);
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+/*fin about us*/
+
+/*inicio recetario*/
+
+#Recetario {
+    background-color: var(--primary);
+}
+#rece_titulo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color:var(--brown);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 25px;
+    color: white
+}
+#Recetario {
+    background-color: var(--primary);
+    font-family: 'Noto Sans', sans-serif;
+}
+.recetas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    min-height: 100vh;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    margin: auto;
+}
+.recetas .box{
+    position: relative;
+    width: 235px;
+    height: 375px;
+    background: var(--primary);
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    margin-right: 15px;
+    margin-top: 45px;
+}
+.recetas:hover .box{
+    transform: rotateY(25deg);
+}
+.recetas .box:hover~.box{
+    transform: rotateY(-25deg);
+    
+}
+.recetas .box:hover{
+    transform: rotateY(0deg) scale(1.25);
+    z-index: 1;
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+}
+.recetas .box .imgBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.recetas .box .imgBox:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, var(--primary), var(--footer));
+    z-index: 1;
+    opacity: 0;
+    transition: 0.3s;
+    mix-blend-mode: multiply;    
+}
+.recetas .box:hover .imgBox:before{
+    opacity: 1;
+}
+.recetas .box .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.recetas .box .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    padding: 9px;
+    align-items: flex-end;
+    box-sizing: border-box;
+}
+.recetas .box .content h2{
+    color: white;
+    transition: 0.5s;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
+    transform: translateY(200px);
+    transition-delay: 0.3s;
+}
+.recetas .box:hover .content h2{
+    transform: translateY(0px);
+}
+
+.recetas .box .content p{
+    color: white;
+    transition: 0.5s;
+    font-size: 13px;
+    margin-bottom: 2px;
+    transform: translateY(200px);
+    transition-delay: 0.4s;
+    font-family: 'Nunito', sans-serif
+}
+.recetas .box:hover .content p{
+    transform: translateY(0px);
+}
+.recetas .box .content .btn_rece{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    margin-top: 15px;
+    transition: 0.5s;
+    transform: translateY(200px);
+    transition-delay: 0.5s;
+    
+}
+.recetas .box:hover .content .btn_rece{
+    transform: translateY(0px);
+}
+/*fin recetario*/
+
+/*inicio receta del día*/
+#rece-dia-t{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-color: var(--brown);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 25px;
+    color: white
+}
+.cookies-desc{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+    color: white; 
+}
+.cookies-desc2{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    color: white; 
+}
+.form-check{
+    font-family: 'Noto Sans', sans-serif;
+    color: white; 
+}
+.ingredientess{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-start;
+}
+.fondo2{
+    background-image: url(./assets/imagenes/cookie.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position:relative;
+    z-index: 2;
+    box-sizing: content-box;
+}
+.fondo2::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(250, 217, 167, 0.247);
+    z-index: -1; 
+}
+/*fin receta del día*/
+
+/*inicio shop*/
+#shop{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-color: var(--brown);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 25px;
+    color: white
+}
+#shopp{
+    font-family: 'Noto Sans', sans-serif;
+    background-color: var(--primary);
+}
+.compras{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    min-height: 100vh;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    margin: auto;
+}
+.compras .box{
+    position: relative;
+    width: 275px;
+    height: 275px;
+    background: var(--primary);
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    margin-right: 15px;
+    margin-top: 45px;
+}
+.compras:hover .box{
+    transform: rotateY(25deg);
+}
+.compras .box:hover~.box{
+    transform: rotateY(-25deg);
+    
+}
+.compras .box:hover{
+    transform: rotateY(0deg) scale(1.25);
+    z-index: 1;
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+}
+.compras .box .imgBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.compras .box .imgBox:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, var(--primary), var(--footer));
+    z-index: 1;
+    opacity: 0;
+    transition: 0.3s;
+    mix-blend-mode: multiply;    
+}
+.compras .box:hover .imgBox:before{
+    opacity: 1;
+}
+.compras .box .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.compras .box .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    padding: 20px;
+    align-items: flex-end;
+    box-sizing: border-box;
+}
+.compras .box .content h2{
+    color: white;
+    transition: 0.5s;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
+    transform: translateY(200px);
+    transition-delay: 0.3s;
+}
+.compras .box:hover .content h2{
+    transform: translateY(0px);
+}
+
+.compras .box .content p{
+    color: white;
+    transition: 0.5s;
+    font-size: 14px;
+    transform: translateY(200px);
+    transition-delay: 0.4s;
+    font-family: 'Nunito', sans-serif
+}
+.compras .box:hover .content p{
+    transform: translateY(0px);
+}
+
+/*fin shop*/
+
+/*contacto*/
+#contact_us{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-color: var(--brown);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 25px;
+    color: white 
+}
+#Formulario {
+    display:flex;
+    justify-self: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 19px;
+    background-color: var(--primary);
+}
+
+#Formulario input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+}
+/*fin contacto*/
+
+/*boton flotante*/
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color: var(--brown);
+	color:#FFF;
+	border-radius:55px;
+	text-align:center;
+	box-shadow: 2px 2px 3px  rgba(218, 130, 67, 0.66);
+    z-index: 3;
+}
+.float i{
+   z-index: 3;
+}
+.my-float{
+	margin-top:22px;
+}
+/*fin boton flotante*/
+
+/*footer*/
+@media screen and (max-width: 768px) {
+    footer article {
+        width: 90vw; 
+        margin: 10px auto; 
+    }
+}
+@media screen and (max-width: 390px) {
+    footer article {
+        width: 90vw; 
+        margin: 10px auto; 
+    }
+}
+@media screen and (max-width: 768px) {
+    .footer-left, .footer-right
+     {
+        width: 90vw;
+    }
+}
+@media screen and (max-width: 390px) {
+    .footer-left, .footer-right
+     {
+        width: 90vw;
+        margin: 0 auto;
+    }
+}
+
+.footer{
+    grid-template-columns: auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 0px;
+    margin: 0 auto;
+    background: var(--footer);
+}
+.footer-left{
+    width:25vw;
+}
+.footer img{
+    display: flex;
+    justify-content: center;
+}
+.footer-links a:before {
+    content: "|";
+    font-weight:300;
+    font-size: 22px;
+    left: 0;
+    color: var(--font_color);
+    display: inline-block;
+    padding-right: 5px;
+  }
+.footer .footer-links .link-1:before {
+    content: none;
+  }
+.footer .footer-links{
+	color: var(--font_color);
+	margin: 20px 0 12px;
+	padding: 0;
+}
+.footer .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+    font-family: 'Nunito', sans-serif;
+    font-weight:500;
+    font-size: 16px;
+	text-decoration: none;
+	color:  var(--font_color);
+}
+.copyright {
+    display: inline-block;
+	color: var(--font_color);
+    font-weight:500;
+    font-family: 'Nunito', sans-serif;
+	vertical-align: middle;
+	margin:0 auto;
+}
+
+/*columna 2*/
+.footer-right{
+    font-family: 'Nunito', sans-serif;
+    width: 35vw;
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    padding-left:0;
+    margin-bottom:0;
+    list-style:none;
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons a{
+  background-color:#33383b;
+  color: white;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998;
+  color: white;
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced;
+  color: white;
+}
+.social-icons a.pinterest:hover
+{
+  background-color: #e60023;
+  color: white;
+}
+.social-icons a.insta:hover
+{
+  background-color:#eb3d94;
+  color: white;
+}
